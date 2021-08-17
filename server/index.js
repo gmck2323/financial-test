@@ -12,9 +12,8 @@ app.use(express.urlencoded());
 
 const db = require("./models");
 
-// const uri = process.env.ATLAS_URI;
+const uri = process.env.ATLAS_URI;
 
-const uri = "mongodb+srv://gmckinsey:Cdhun649Gkqk2vaH@cluster0.u0ey4.mongodb.net/user-test?retryWrites=true&w=majoritysecret=fe3rgrewsdtsdfgf"
 
 db.mongoose
   .connect(uri, {
